@@ -1,0 +1,227 @@
+/* font-family: 'Noto Sans', sans-serif;
+font-family: 'Permanent Marker', cursive; */
+
+html,
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+h1{
+    font-size: 2rem;
+    font-family: 'Permanent Marker', cursive;
+}
+h4{
+    font-weight: 100;
+    letter-spacing: .25em;
+}
+
+img{
+    width: 100%;
+    display: inline;
+}
+
+ /* ==============
+    Layout 
+ ============== */
+
+  /* First Row */
+
+    #div1{
+        background-color: #00B4D8;
+        background-image: linear-gradient( to top right, #00B4D8 30%, #0096C7);
+        color: #03045E;
+        text-align: center;
+        padding: 2em 1.45em 0;
+    }
+
+    div[class$="cloud"] {
+        width: 20%;
+    }
+    .left-cloud{
+        margin-left: 2em;
+    }
+    .right-cloud{
+        position: absolute;
+        right: 2em;
+    }
+
+    .intro-heading{
+        letter-spacing: .20em;
+        margin-bottom: .45em;
+    }
+    .subtitle-heading{
+        font-size: 1em;
+        font-weight: 100;
+    }
+    .emphasize-on{
+        border-bottom: 2px solid #03045E;
+    }
+
+    .right-cloud + div {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+
+    /* Second Row */
+
+    #div2{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5em .2em;
+    }
+
+    .little-about{
+        width: 90%;
+        letter-spacing: .10em;
+        font-size: 1rem;
+        font-weight: 100;
+        line-height: 1.6;
+    }
+    .little-about-heading{
+        color: #03045E;
+        font-size: 2rem;
+    }
+
+
+
+    .profile-img{
+        width: 35%;
+        margin: .75em auto;
+    }
+
+    /* Third Row & Fourth */
+
+    #div3{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .skills,
+    .education,
+    .experience,
+    .contact-me{
+        width: 100%;
+    }
+
+    .skill-list{
+        list-style: none;
+        text-align: center;
+        line-height: 2;
+    }
+
+
+    .me-headers{
+        background-color: #00B4D8;
+        color: #03045E;
+        font-size: 2rem;
+        padding: .75em 1em;
+    }
+
+    /* Fifth Row & Last Row */
+
+    #div3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .experience{
+        width: 100%;
+        letter-spacing: .05em;
+        line-height: 1.4;
+    }
+    .experience p{
+        padding: 0 1em;
+    }
+
+    .intern-img{
+        width: 30%;
+    }
+    .img-together{
+        display: flex;
+        justify-content: space-evenly;
+    }
+  
+    .contact-me{
+        line-height: 2;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .contact-me ul{
+        list-style: none;
+        color: #03045E
+    }
+
+    li a{
+        text-decoration: none;
+        color: #03045E;
+    }
+    .contact-me ul :hover {
+        color: #0096C7;
+    }
+
+   
+
+
+    /* Footer */
+
+    footer{
+        background-color: #00B4D8;
+        background-image: linear-gradient( to left, #0096C7 , #00B4D8 35%, #03045E );
+        text-align: center;
+        padding: .5em 5em;
+    }
+
+ /* ===============
+    Media Queries
+ ================= */
+
+ @media (min-width: 750px)
+
+ {
+
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+    .subtitle-heading{
+        font-size: 2rem;
+    }
+    .little-about{
+        font-size: 1.5rem;
+    }
+    .little-about-heading{
+        font-size: 4rem;
+    }
+
+
+     #div3,
+     #div4{
+         flex-direction: row;
+         justify-content: space-evenly;
+         align-items: flex-start;
+     }
+
+     .skills,
+     .education,
+     .contact-me,
+     .experience{
+         width: 45%;
+     }
+ }
+
