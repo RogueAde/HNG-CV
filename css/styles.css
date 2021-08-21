@@ -12,10 +12,13 @@ h1{
     font-size: 2rem;
     font-family: 'Permanent Marker', cursive;
 }
+
 h4{
-    font-weight: 100;
-    letter-spacing: .25em;
+    font-weight: 30;
+    font-size: .7rem;
+    letter-spacing: .1em;
 }
+
 
 img{
     width: 100%;
@@ -95,7 +98,62 @@ img{
         margin: .75em auto;
     }
 
-    /* Third Row & Fourth */
+    /* Third Row */
+
+    #div7{
+        background-color: #0096C7;
+        color: #000;
+        text-align: center;
+        padding: 1.7em 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #div7 h2{
+        font-size: 2rem;
+    }
+
+    .skills-box{
+        border: inset 1px #d84100;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #00B4D8;
+        width: 95%;
+        border-radius: 10px;
+        margin: .5em;
+        overflow: scroll hidden;
+    }
+
+    .main-skills{
+        display: flex;
+        padding: .5em .75em;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-skills div{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    #main-skills-po div{
+        width: 60%;
+        margin: 0 .5em;
+    }
+  
+        
+    .ski-img{
+        width: 100%;
+    }
+    
+
+
+
+
+    /* Fourth Row */
 
     #div3{
         display: flex;
@@ -103,29 +161,19 @@ img{
         text-align: center;
         align-items: center;
     }
-    .skills,
+
     .education,
     .experience,
     .contact-me{
         width: 100%;
     }
 
-    .skill-list{
-        list-style: none;
-        text-align: center;
-        line-height: 2;
-    }
-
-    ul span{
-       margin-left: 2em;
-    }
-
 
     .me-headers{
-        background-color: #00B4D8;
         color: #03045E;
         font-size: 2rem;
         padding: .75em 1em;
+        text-transform: uppercase;
     }
 
     /* Fifth Row & Last Row */
@@ -152,24 +200,6 @@ img{
         display: flex;
         justify-content: space-evenly;
     }
-  
-    .contact-me{
-        line-height: 2;
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    .contact-me ul{
-        list-style: none;
-        color: #03045E
-    }
-
-    li a{
-        text-decoration: none;
-        color: #03045E;
-    }
-    .contact-me ul :hover {
-        color: #0096C7;
-    }
 
    
 
@@ -178,9 +208,38 @@ img{
 
     footer{
         background-color: #00B4D8;
-        background-image: linear-gradient( to left, #0096C7 , #00B4D8 35%, #03045E );
         text-align: center;
-        padding: .5em 5em;
+        padding: .5em 2em;
+    }
+    .contact-me{
+        line-height: 2;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .contact-me ul{
+        list-style: none;
+        color: #03045E;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    li:focus,
+    li:hover{
+        transform: rotate(45deg) scale(1.5);
+        transition-delay: 0.2s;
+        transition-duration: 1.2s;
+    }
+ 
+    li a{
+        text-decoration: none;
+        color: #03045E;
+    } 
+    
+    .contact-me ul:hover,
+    .contact-me ul:focus{
+        color: #0096C7;
     }
 
  /* ===============
@@ -195,7 +254,7 @@ img{
         font-size: 3.5rem;
     }
     h2{
-        font-size: 3rem;
+        font-size: 4rem;
     }
     h3{
         font-size: 2rem;
@@ -214,16 +273,22 @@ img{
     }
 
 
-     #div3,
-     #div4{
+     #div3{
          flex-direction: row;
          justify-content: space-evenly;
          align-items: flex-start;
      }
 
-     .skills,
+     #main-skills-po div{
+         margin: 0 auto;
+     }
+
+     .skills-box{
+         max-width: 915px;
+         overflow: hidden;
+     }
+
      .education,
-     .contact-me,
      .experience{
          width: 45%;
      }
