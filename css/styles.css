@@ -136,6 +136,19 @@ img{
     #main-skills-po{
         overflow: auto;
     }
+    #main-skills-po::-webkit-scrollbar{
+        height: 4px;
+        width: 2px;
+    }
+    #main-skills-po::-webkit-scrollbar-track{
+        background-color: #0096C7;
+        border-radius: 10px;
+    }
+    #main-skills-po::-webkit-scrollbar-thumb{
+        background-color: #d8ad00;
+        border-radius: 6px;
+        box-shadow: inset 0 0 6px ;
+    }
 
     #main-skills-po div{
         width: 90%;  
