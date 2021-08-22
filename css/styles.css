@@ -61,6 +61,10 @@ img{
         border-bottom: 2px solid #03045E;
     }
 
+    .mountain{
+        max-width: 756px;
+    }
+
     .right-cloud + div {
         width: 70%;
         margin: 0 auto;
@@ -121,6 +125,9 @@ img{
         border-radius: 10px;
         margin: .5em;
     }
+    .skills-box:last-child{
+        margin-bottom: 3em;
+    }
 
     .main-skills{
         display: flex;
@@ -137,11 +144,11 @@ img{
         overflow: auto;
     }
     #main-skills-po::-webkit-scrollbar{
-        height: 4px;
-        width: 2px;
+        height: 6px;    
     }
     #main-skills-po::-webkit-scrollbar-track{
-        background-color: #0096C7;
+        background-color: #d8ad00;
+        margin: 10px;
         border-radius: 10px;
     }
     #main-skills-po::-webkit-scrollbar-thumb{
@@ -154,8 +161,11 @@ img{
         width: 90%;  
         margin: 0 5em 0 0;
     }
+    #main-skills-po div:first-child{
+        margin-left: .5em;
+    }
     #main-skills-po div:last-child{
-        margin-right: 0;
+        margin-right: .75em;
     }
 
         
@@ -251,7 +261,7 @@ img{
 
     li:focus,
     li:hover{
-        transform: rotate(45deg) scale(1.5);
+        transform: scale(1.5);
         transition-delay: 0.2s;
         transition-duration: 1.2s;
     }
@@ -296,7 +306,11 @@ img{
         font-size: 4rem;
     }
 
+    .profile-img{
+        max-width: 450px;
+    }
 
+    
      #div3{
          flex-direction: row;
          justify-content: space-evenly;
@@ -307,7 +321,7 @@ img{
      }
 
      #main-skills-po div{
-         width: 35%;
+         width: 65%;
          margin: 0 auto;
      }
 
